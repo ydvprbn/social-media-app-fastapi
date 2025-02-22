@@ -9,7 +9,7 @@ from .routers import post, user, auth, vote
 
 app = FastAPI()
 
-origins = ["*"]
+origins = [".vercel.app,.now.sh"]
 
 app.add_middleware(
     CORSMiddleware,
